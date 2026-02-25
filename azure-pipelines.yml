@@ -45,6 +45,8 @@ jobs:
             JF_ACCESS_TOKEN: $(JF_ACCESS_TOKEN)
             JF_GIT_TOKEN: $(JF_GIT_TOKEN)
             JF_RELEASES_REPO: 'mikios-releases-jfrog-io'
+            GITHUB_SHA: $(Build.SourceVersion)
+            GITHUB_REF: $(Build.SourceBranch)
          inputs:
             targetType: 'inline'
             script: |
