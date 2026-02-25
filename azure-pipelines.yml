@@ -49,7 +49,7 @@ jobs:
             targetType: 'inline'
             script: |
                Get-Command mvn
-               echo %PATH%
+               Get-Command virtualenv
                virtualenv --version 
                if ([string]::IsNullOrEmpty($env:JF_RELEASES_REPO)) {
                    $url = "https://releases.jfrog.io/artifactory/frogbot/v2/[RELEASE]/frogbot-windows-amd64/frogbot.exe"
