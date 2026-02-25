@@ -39,7 +39,8 @@ jobs:
              # echo $(JF_GIT_API_ENDPOINT)
              echo $(Build.Repository.Name)
              echo $(Build.SourceVersion)
-             $(Build.SourceBranch)
+             echo $(Build.SourceBranch)
+             echo $(Build.SourceBranchName)
        - task: PowerShell@2
          displayName: 'Download and Run Frogbot'
          env:
